@@ -56,7 +56,7 @@ function SessionHandler(db) {
             password
         } = req.body;
         userDAO.validateLogin(userName, password, (err, user) => {
-            const errorMessage = "Invalid username and/or password";
+           // const errorMessage = "Invalid username and/or password";
             const invalidUserNameErrorMessage = "Invalid username";
             const invalidPasswordErrorMessage = "Invalid password";
             if (err) {

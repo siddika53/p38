@@ -7,7 +7,7 @@ const {
 function ResearchHandler(db) {
     "use strict";
 
-    const researchDAO = new ResearchDAO(db);
+    //const researchDAO = new ResearchDAO(db);
 
     this.displayResearch = (req, res) => {
 

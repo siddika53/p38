@@ -554,7 +554,7 @@
 
     Tour.prototype._setupMouseNavigation = function() {
       var _this = this;
-      _this = this;
+      //_this = this;
       $(document).off("click.tour-" + this._options.name, ".popover.tour-" + this._options.name + " *[data-role=next]:not(.disabled)").on("click.tour-" + this._options.name, ".popover.tour-" + this._options.name + " *[data-role=next]:not(.disabled)", function(e) {
         e.preventDefault();
         return _this.next();
@@ -661,8 +661,8 @@
       $element = $(element);
       $background = $("<div/>");
       offset = $element.offset();
-      offset.top = offset.top;
-      offset.left = offset.left;
+     / /offset.top = offset.top;
+     // offset.left = offset.left;
       $background.width($element.innerWidth()).height($element.innerHeight()).addClass("tour-step-background").offset(offset);
       $element.addClass("tour-step-backdrop");
       $("body").append($background);
